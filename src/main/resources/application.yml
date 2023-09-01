@@ -1,0 +1,14 @@
+server:
+  port: 9092
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/rashad_tweet
+    username: postgres
+    password: rashadnewpassword
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    show-sql: true
+  liquibase:
+    change-log: classpath:/liquibase/changelog-master.yml
